@@ -1,0 +1,32 @@
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+.item{
+    background:cornflowerblue;
+    padding: 10px 15px;
+    min-width: 40px;
+    border-radius: 30%;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.boton{
+    background:chartreuse;
+    padding: 10px 15px;
+    min-width: 40px;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+.div_boton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.preguntas{
+    background:lightblue;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}

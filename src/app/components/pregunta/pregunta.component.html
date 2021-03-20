@@ -1,0 +1,36 @@
+<div [ngClass]="'row'">
+    <div [ngClass]="'item'" *ngFor="let item of items;let i=index"(click)="ubicar_contexto(i)">
+        {{item}}
+    </div>
+</div>
+<br>
+<div [ngClass]="'div_boton'">
+    <button [ngClass]="'boton'" (click)="incrementar()">Siguiente</button>
+</div>
+<br>
+<div>
+    <h3>{{contexto}}</h3>
+</div>
+<div>
+    <h4>{{pregunta}}</h4>
+</div>
+<br>
+
+<div *ngFor="let respuesta of respuestas; let i = index" [ngClass]="'preguntas'">
+    <ion-button (click)="ubicar_respuesta(respuesta.id)">
+        {{i+1}} - {{respuesta.respue}}
+        <br>
+        <span *ngIf="respuesta.id==currentrespue">
+            <h3>{{des_respuesta}}</h3>
+        </span>
+        <br>
+    </ion-button>               
+</div>
+
+
+<br>
+<div [ngClass]="'div_boton'">
+    <button [ngClass]="'boton'" (click)="incrementar()">Siguiente</button>
+</div>
+<br>
+<br>

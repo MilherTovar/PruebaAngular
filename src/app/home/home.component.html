@@ -1,0 +1,25 @@
+<div>
+    <h1>Prueba tecnica</h1>
+  </div>
+  <div>
+    <h4>Realizada por: {{nombre}} {{apellido}}</h4>
+    <h4>Correo: {{correo}}</h4>
+    <h4>Telefono: {{telefono}}</h4>
+  </div>
+  <div>
+    <label>Usuario</label>
+    <input name="nombreUsuario" type="text">
+  </div>
+  <div>
+    <label>Contraseña</label>
+    <input name="passwordUsuario" type="password">
+  </div>
+  <div>
+    <button>Ingresar</button>
+  </div>
+  <div>
+    <button (click)="crear_usuario()">Crear Usuario</button>
+  </div>
+  <a [routerLink]="['/dashboard']" [ngClass]="'logo'">
+    <img src="../../assets/img/logo.png" class="center">
+  </a> 
